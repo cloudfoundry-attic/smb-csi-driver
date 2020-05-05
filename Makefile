@@ -37,10 +37,10 @@ e2e: image-local-registry
 	ginkgo .
 
 fly:
-	fly -t persi execute --tag=kind  -p -c ~/workspace/smb-volume-k8s-release/smb-csi-driver/ci/unit-tests.yml -i smb-volume-k8s-release=$$HOME/workspace/smb-volume-k8s-release
+	fly -t persi execute --tag=kind  -p -c ~/workspace/smb-csi-driver/ci/unit-tests.yml -i smb-volume-k8s-release=$$HOME/workspace/smb-volume-k8s-release
 
 fly-e2e:
-	fly -t persi execute --tag=kind  -p -c ~/workspace/smb-volume-k8s-release/smb-csi-driver/ci/e2e-tests.yml -i smb-volume-k8s-release=$$HOME/workspace/smb-volume-k8s-release
+	fly -t persi execute --tag=kind  -p -c ~/workspace/smb-csi-driver/ci/e2e-tests.yml -i smb-volume-k8s-release=$$HOME/workspace/smb-volume-k8s-release
 
 tag	:=	"$(shell (git symbolic-ref -q --short HEAD || git describe --tags --exact-match) | sed 's/master/latest/')"
 kapp: SHELL=/bin/bash

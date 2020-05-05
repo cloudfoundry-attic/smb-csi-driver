@@ -8,14 +8,14 @@ image_resource:
     tag: latest
 
 inputs:
-  - name: smb-volume-k8s-release
+  - name: smb-csi-driver
 
 outputs:
   - name: built-images
 
 run:
   path: make
-  args: [ "--keep-going", "--directory=smb-volume-k8s-release/smb-csi-driver", "start-docker", "e2e", "kill-docker" ]
+  args: [ "--keep-going", "--directory=smb-csi-driver", "start-docker", "e2e", "kill-docker" ]
 
 params:
   K8S_IMAGE: kindest/node:v1.17.0

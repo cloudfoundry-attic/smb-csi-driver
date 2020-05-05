@@ -8,8 +8,8 @@ image_resource:
     tag: latest
 
 inputs:
-  - name: smb-volume-k8s-release
+  - name: smb-csi-driver
 
 run:
   path: make
-  args: [ "--keep-going", "--directory=smb-volume-k8s-release/smb-csi-driver", "test"]
+  args: [ "--keep-going", "--directory=smb-csi-driver", "test"]
