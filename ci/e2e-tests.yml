@@ -20,4 +20,4 @@ run:
 params:
   K8S_IMAGE: kindest/node:v1.17.0
   VOLUME_MODE_SUITE: true
-  IMAGE_DESTINATION: "../../built-images/smb-csi-driver.tgz"
+  IMAGE_DESTINATION: "../built-images/smb-csi-driver.tgz"
