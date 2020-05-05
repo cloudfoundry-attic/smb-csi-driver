@@ -31,6 +31,5 @@ kubectl exec -it nginx bash
 
 # Testing
 ```
-cd smb-csi-driver
 make fly
 ```
