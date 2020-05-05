@@ -1,12 +1,12 @@
 # Installation
 ## Installing alpha version
 ```
-kubectl apply --kustomize "https://github.com/cloudfoundry/smb-volume-k8s-release/smb-csi-driver/deploy/overlays/alpha/?ref=master"
+kubectl apply --kustomize "https://github.com/cloudfoundry/smb-csi-driver/deploy/overlays/alpha/?ref=master"
 ```
 
 ## Installing latest dev version
 ```
-kubectl apply --kustomize "https://github.com/cloudfoundry/smb-volume-k8s-release/smb-csi-driver/deploy/overlays/dev/?ref=master"
+kubectl apply --kustomize "https://github.com/cloudfoundry/smb-csi-driver/deploy/overlays/dev/?ref=master"
 ```
 
 # Usage example
